@@ -20,6 +20,6 @@ if __name__ == '__main__':
         ext_modules=[CUDAExtension('localAttention', sources,
                                    extra_compile_args = extra_compile_args),
                      ],
-       cmdclass={'build_ext': BuildExtension_With_options(use_ninja=False)},
+       cmdclass={'build_ext': BuildExtension.With_options(use_ninja=False)},
 
     )
